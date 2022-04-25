@@ -13,7 +13,10 @@
 
 Project ini merupakan sebuah aplikasi sederhana berbasis CRUD, di dalam aplikasi ini terdapat menu tambahkan project, cari berdasarkan nama client, menu hapus dan edit project dilengkapi juga dengan fitur pagination agar data terurut dengan keinginan, juga dilengkapi bootstrap sehingga tampilannya tidak monoton. 
 Anda bisa melihat sekilas tentang project saya dibawah ini :
-<img src="https://drive.google.com/file/d/1owj_XtNhTfryYra5TvJkt3z9HD1oFKn4/view?usp=sharing" align="center">
-<img src="https://drive.google.com/file/d/1R2kzBR-aGCIBQEGXFnxv4Xs5BH-I-kBQ/view?usp=sharing" align="center">
+
+<p align="center">
+<link href="http://127.0.0.1:8000/pegawai"> align="center"><br>
+
+<img src="https://drive.google.com/file/d/1R2kzBR-aGCIBQEGXFnxv4Xs5BH-I-kBQ/view?usp=sharing" align="center"></p>
 
 
