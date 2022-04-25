@@ -15,7 +15,9 @@ Project ini merupakan sebuah aplikasi sederhana berbasis CRUD, di dalam aplikasi
 Anda bisa melihat sekilas tentang project saya dibawah ini :
 
 <p align="center">
-<a href="http://127.0.0.1:8000/pegawai" align="center"><br>
+![Untitled1](https://user-images.githubusercontent.com/103389606/165085102-072439ff-fb98-4e0c-a7fb-78437bd10106.png)
+<br>
+![ya1](https://user-images.githubusercontent.com/103389606/165085432-a8e7facf-7d4e-4c6d-a685-8a8fcf701661.png)
 
 
 
