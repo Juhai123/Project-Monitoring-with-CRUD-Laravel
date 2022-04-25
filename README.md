@@ -15,7 +15,7 @@ Project ini merupakan sebuah aplikasi sederhana berbasis CRUD, di dalam aplikasi
 Anda bisa melihat sekilas tentang project saya dibawah ini :
 
 <p align="center">
-<link href="http://127.0.0.1:8000/pegawai"> align="center"><br>
+<link href="http://127.0.0.1:8000/pegawai" align="center"><br>
 
 <img src="https://drive.google.com/file/d/1R2kzBR-aGCIBQEGXFnxv4Xs5BH-I-kBQ/view?usp=sharing" align="center"></p>
 
