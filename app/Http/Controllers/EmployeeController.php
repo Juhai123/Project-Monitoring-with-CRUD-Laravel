@@ -32,10 +32,10 @@ class EmployeeController extends Controller
 
         return redirect()->route('pegawai')->with('success', 'Data yang diinputkan sudah berhasil ditambahkan');
     }
-    public function tampilkandata($id){
+    public function editdata($id){
 
         $data = Employee::find($id);
-        return view ('tampildata', compact('data'));
+        return view ('editdata', compact('data'));
     }
     public function updatedata(Request $request, $id){
         $data = Employee::find($id);
