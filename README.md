@@ -15,9 +15,12 @@ Project ini merupakan sebuah aplikasi sederhana berbasis CRUD, di dalam aplikasi
 Anda bisa melihat sekilas tentang project saya dibawah ini :
 
 <p align="center">
-![Untitled1](https://user-images.githubusercontent.com/103389606/165085102-072439ff-fb98-4e0c-a7fb-78437bd10106.png)
-<br>
-![ya1](https://user-images.githubusercontent.com/103389606/165085432-a8e7facf-7d4e-4c6d-a685-8a8fcf701661.png)
+Tampilan Halaman home
+![Halaman Benar](https://user-images.githubusercontent.com/103389606/181525909-e08fbb8b-a9ba-4b2e-8053-81784af739f6.png)
+Tampilan Tambah Project
+![tambahbenar](https://user-images.githubusercontent.com/103389606/181526014-7de9eac8-aabb-42fc-a01d-038470e39091.png)
+Tampilan Edit Project
+![editbenar](https://user-images.githubusercontent.com/103389606/181526065-3cfa19e5-ce93-495c-b476-8f87cd4ee204.png)
 
 
 
