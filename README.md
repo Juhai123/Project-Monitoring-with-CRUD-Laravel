@@ -14,13 +14,14 @@
 Project ini merupakan sebuah aplikasi sederhana berbasis CRUD, di dalam aplikasi ini terdapat menu tambahkan project, cari berdasarkan nama client, menu hapus dan edit project dilengkapi juga dengan fitur pagination agar data terurut dengan keinginan, juga dilengkapi bootstrap sehingga tampilannya tidak monoton. 
 Anda bisa melihat sekilas tentang project saya dibawah ini :
 
-<p align="center">
+<p align="left">
 Tampilan Halaman home <br>
-(https://user-images.githubusercontent.com/103389606/181525909-e08fbb8b-a9ba-4b2e-8053-81784af739f6.png)
+(https://user-images.githubusercontent.com/103389606/181525909-e08fbb8b-a9ba-4b2e-8053-81784af739f6.png)<br>
 Tampilan Tambah Project <br>
-(https://user-images.githubusercontent.com/103389606/181526014-7de9eac8-aabb-42fc-a01d-038470e39091.png)
+(https://user-images.githubusercontent.com/103389606/181526014-7de9eac8-aabb-42fc-a01d-038470e39091.png)<br>
 Tampilan Edit Project <br>
-(https://user-images.githubusercontent.com/103389606/181526065-3cfa19e5-ce93-495c-b476-8f87cd4ee204.png)
+(https://user-images.githubusercontent.com/103389606/181526065-3cfa19e5-ce93-495c-b476-8f87cd4ee204.png)<br>
+    </p>
 
 
 
