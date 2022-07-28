@@ -13,45 +13,42 @@
 </head>
 
 <body>
-    <h1 class="text-center mb-4"> Tambah Project</h1>
+    <h1 class="text-center mb-4"> Edit Data Project</h1>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-8">
                 <div class="card">
                     <div class="card-body">
-                        <form action="/insertdata" method="POST" enctype="multipart/form-data">
+                        <form action="/updatedata/{{ $data->id}}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Project Name</label>
-                                <input type="text" name="project_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="text" name="project_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$data->project_name}}">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Client</label>
-                                <input type="text" name="client" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="text" name="client" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$data->client}}">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Nama Leader</label>
-                                <input type="text" name="nama_leader" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="text" name="nama_leader" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$data->nama_leader}}">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Email</label>
-                                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Masukkan foto leader</label>
-                                    <input type="file" name="foto" class="form-control">
-                                </div>
-                                <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Start Date</label>
-                                <input type="date" name="created_at" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$data->email}}">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Progress</label>
-                                <input type="text" name="progress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="text" name="progress" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$data->progress}}">
                             </div>
-                                
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                                <button onclick="goBack()" class="btn btn-dark">Kembali</button>
+                            <div class="mb-3">
+                                <label for="EndDate" class="form-label">End Date</label>
+                                <input type="date" name="updated_at" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{$data->updated_at}}">
+                            </div>
+
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button onclick="goBack()" class="btn btn-dark">Kembali</button>
                             <script>
                                 function goBack() {
                                     window.history.back();

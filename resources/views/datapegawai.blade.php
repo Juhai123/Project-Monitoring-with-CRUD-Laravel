@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>CRUD Laravel</title>
@@ -28,14 +29,16 @@
         <a href="/tambahpegawai" class="btn btn-success">Tambah Project </a>
         <div class="row g-5 align-items-center">
             <div class="col-auto">
+                <br>
                 <form action="/pegawai" method="GET">
-                    <label for="disabledTextInput" class="form-label">Search by Client </label>
+                    <label text-right for="disabledTextInput" class="form-label">Search by Client </label>
                     <input type="search" id="inputPassword6" name="search" class="form-control" aria-describedby="passwordHelpInline">
 
                 </form>
             </div>
 
         </div>
+        <br>
         <div class="row">
             @if($message = Session::get('success'))
             <div class="alert alert-success" role="alert">
@@ -43,7 +46,7 @@
             </div>
             @endif
 
-            <table class="table mt-2">
+            <table class="table mt-5">
                 <thead class="table-secondary table-primary">
                     <tr>
                         <th scope="col">NO</th>
@@ -73,15 +76,20 @@
                         <td class="table-light">{{ $row ->created_at->format ('d M Y')}}</td>
                         <td class="table-light">{{ $row ->updated_at->format ('d M Y')}}</td>
                         <td class="table-light">
+                            @if ($row->progress == 100)
                             <div class="progress ">
-                                <div class="progress-bar" role="progressbar" style="width:{{$row->progress}}%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">{{$row->progress}}%</div>
+                                <div class="progress-bar text-left" style="width:100%">{{$row->progress}}%</div>
                             </div>
-
+                @else
+                <div class="progress ">
+                                <div class="progress-bar bg-success" style="width:{{$row->progress}}%">{{$row->progress}}%</div>
+                            </div>
+                @endif
                         </td>
                         <td class="table-light">
                             <a href="/delete/{{$row->id}}" class="btn btn-danger">
                                 <span class="glyphicon glyphicon-trash"></span></a>
-                            <a href="/tampilkandata/{{$row->id}}" class="btn btn-success">
+                            <a href="/editdata/{{$row->id}}" class="btn btn-success">
                                 <span class="glyphicon glyphicon-pencil"></span></a>
                             </a>
                         </td>
